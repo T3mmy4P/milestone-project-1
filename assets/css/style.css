@@ -7,13 +7,18 @@
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, .button {
+:root {
+    --white-text: rgb(255, 255, 255);
+    --grey-white: rgb(217, 217, 217);
+    --golden-yellow: rgb(255, 183, 3);
+}
+
+h1, h2, h3, h4, h5, label, .button, .nav-bar, .social-links a {
     font-family: "Syne", sans-serif;
 }
 
-p {
+p, textarea {
     font-family: "Nunito", sans-serif;
-    color: rgb(52, 58, 64);
 }
 
 a {
@@ -21,43 +26,31 @@ a {
 }
 
 h2 {
-    text-align: center;
-    font-weight: 500;
     font-size: 28px;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    color: rgb(33, 33, 33);
 }
 
 h3 {
-    text-align: center;
-    font-weight: 400;
     font-size: 24px;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-    color: rgb(255, 255, 255);
+    color: var(--white-text);
 }
 
 h4 {
-    text-align: center;
-    font-weight: 500;
     font-size: 20px;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+}
+
+h2, h4 {
     color: rgb(33, 33, 33);
 }
-
-ul {
-    list-style-type: circle;
-    text-align: left;
-    margin-inline: 14rem;
+h2, h3, h4 {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
 }
 
 
-
-/* Heading underline stylings */
+/*---------- Heading Border Stylings */
 .yellow-border {
-    border-bottom: solid 2px rgb(255, 183, 3);
+    border-bottom: solid 2px var(--golden-yellow);
     max-width: 50%;
     margin: auto;
     margin-bottom: 3rem;
@@ -65,43 +58,34 @@ ul {
 }
 
 .blue-border-alt {
-    border-bottom: solid 5px rgba(30, 73, 107, 0.631);
     max-width: 20%;
-    margin: auto;
-    padding: 1rem;
-    margin-bottom: 3rem;
 }
 
 .blue-border-mid {
-    border-bottom: solid 5px rgba(30, 73, 107, 0.631);
     max-width: 30%;
-    margin: auto;
-    padding: 1rem;
-    margin-bottom: 3rem;
 }
 
 .blue-border {
-    border-bottom: solid 5px rgba(30, 73, 107, 0.631);
     max-width: 30%;
-    margin: auto;
-    padding: 1rem;
-    margin-bottom: 3rem;
 }
 
 .blue-border-short {
-    border-bottom: solid 5px rgba(30, 73, 107, 0.631);
     max-width: 10%;
-    margin: auto;
-    padding: 1rem;
-    margin-bottom: 5rem;
 }
 
 .blue-border-long {
-    border-bottom: solid 5px rgba(30, 73, 107, 0.631);
     max-width: 70%;
+}
+
+.blue-border-long,  
+.blue-border-short, 
+.blue-border, 
+.blue-border-mid, 
+.blue-border-alt {
+    border-bottom: solid 5px rgba(30, 73, 107, 0.631);
     margin: auto;
     padding: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.7rem;
 }
 
 .row {
@@ -113,8 +97,16 @@ ul {
     padding: 4rem;
 }
 
+h2, h3, h4, 
+.col-30 p, 
+.social-links a i , 
+.col-20 h4 i, .col-30 h2,  
+#remote-recording p {
+    text-align: center;
+}
 
-/* ----------------------- Header */
+
+/* ----------------------- HEADER SECTION */
 /* container for the logo and nav bar section */
 .header-container {
     background-color: rgb(0, 0, 0);
@@ -137,55 +129,49 @@ ul {
     align-items: center;
 }
 
-.logo a img, .logo a h2{
+.logo a img, .logo a h2, .list-item {
     display: inline;
 }
 
 .logo h1 {
     letter-spacing: 2px;
     font-weight: 600;
-    font-size: 28px;
-    color: rgb(217, 217, 217);
+    font-size: 30px;
+    color: var(--grey-white);
     margin: auto;
     margin-left: 0;
 }
 
 .logo a img{
-    max-width: 16%;
+    max-width: 14%;
     padding: 5px;
 }
 
 .nav-bar {
     list-style-type: none;
     margin: 40px;
-    font-family: "Syne", sans-serif;
 }
 
-.list-item {
-    display: inline;
-}
 
 .list-item a {
     margin: 20px;
     letter-spacing: 2px;
     font-size: 17px;
-    color: rgb(217, 217, 217);
+    color: var(--grey-white);
 }
 
 .active {
-    border-bottom: solid 2px rgb(255, 183, 3);
+    border-bottom: solid 2px var(--golden-yellow);
     padding-bottom: 0.6rem;
     max-width: 100%; 
 }
 
-/* drop down menu set to no display for larger screen. 
-Will only appear on smaller display screens */
 .drop-down-select {
     display: none;
 }
 
 
-/* ----------------------- Footer */
+/* ----------------------- FOOTER SECTION */
 footer {
     background-color:rgba(30, 73, 107, 0.631);
     width: 100%;
@@ -200,58 +186,52 @@ footer {
 .social-links {
     display: flex;
     width: 100%;
+    margin: 50px;
     justify-content: space-around;
 }
 
-.social-links a {
-    margin: 50px;
-    font-family: "Syne", sans-serif;
-    letter-spacing: 1px;
-}
 
 .social-links i {
     margin: 10px;
 }
 
-.social-links a, .social-links i {
-    color: rgb(217, 217, 217);
+.social-links i {
+    color: var(--grey-white);
 }
 
 .social-links a i , .col-20 h4 i{
     display: block;
     font-size: 24px;
-    text-align: center;
 }
 
 
-/* ----------------------- Pseudo Rules */
-.social-links a:hover, .social-links i:hover {
-    color: rgb(255, 183, 3);
+/* ----------------------- PSEUDO RULES*/
+.social-links i:hover {
+    color: var(--golden-yellow);
 }
 
 .list-item a:hover {
-    color: rgb(217, 217, 217);
     padding-bottom: 7px;
-    border-bottom: solid 2px rgb(217, 217, 217);   
+    border-bottom: solid 2px var(--grey-white);   
 }
 
 .list-item a:focus {
-    border-bottom: solid 2px rgb(255, 183, 3);
-}
-
-.list-item a:focus::after {
-    border-bottom: solid 2px rgb(255, 183, 3);
+    border-bottom: solid 2px var(--golden-yellow);
 }
 
 .button:hover {
-    background-color: rgb(255, 183, 3);
+    background-color: var(--golden-yellow);
     font-size: 17px;
     font-weight: 500;
-    color: rgb(255, 255, 255);
+    color: var(--white-text);
 }
 
 .button a:hover {
-    color: rgb(255, 255, 255);
+    color: var(--white-text);
+}
+
+input:hover, textarea:hover {
+    border: solid 2px rgb(0, 0, 0);
 }
 
 
@@ -263,10 +243,6 @@ footer {
     margin: 0;
 }
 
-/* I couldnt get the hero-image to act 
-how I wanted when used directly in html 
-and decided to add it as a background 
-image for the section  */
 .hero-image {
     background-image: url('../images/hero-image.jpg');
     width: 100%;
@@ -276,7 +252,6 @@ image for the section  */
 }
 
 .description {
-    color: rgb(239, 239, 239);
     position: absolute;
     width: 55%;
     bottom: 70px;
@@ -286,14 +261,14 @@ image for the section  */
 .description h2 {
     font-weight: 500;
     font-size: 28px;
-    color: rgb(221, 221, 221);
+    color: var(--white-text);
     margin: 0;
 }
 
 .description h3 {
     font-weight: 400;
     font-size: 17px;
-    color: rgb(255, 183, 3);
+    color: var(--golden-yellow);
 }
 
 .description h2, .description h3 {
@@ -314,7 +289,7 @@ audio {
 }
 
 
-/* ----------------------- About Me */
+/* ----------------------- ABOUT ME SECTION*/
 .col-30 {
     width: 40%;
     padding: 0.5rem;
@@ -331,34 +306,27 @@ audio {
     margin-bottom: 1.5rem;
     height: auto;
 
-    font-weight: 300;
-    font-size: 1.3rem;
+    font-weight: 400;
+    font-size: 1rem;
     letter-spacing: 1px;
-    text-align: center;
-}
-
-.col-30 h2 {
-    text-align: center;
+    line-height: 1.8rem;
 }
 
 
 
-/* ----------------------- Videos */
+/* ----------------------- VIDEOS SECTION */
 video {
     width: 100%;
     height: auto;
     margin-bottom: 0;
 }
 
-/* this was only used to remove 
-excess padding that might have 
-been inherited */
 .no-padding {
     padding: 0;
 }
 
 
-/* ----------------------- Button */
+/* ----------------------- BUTTON STYLING */
 
 .button {
     display: flex;
@@ -380,17 +348,11 @@ been inherited */
 
 
 /* ------------------------------------------- SERVICES PAGE */
-/* added a row-background class to allow 
-for use of an alternate background and to 
-maintain visual consistency on each page */
 .row-background {
     background-color: rgb(176, 183, 192);
 }
 
-
-/* also decided to add the image as 
-a background as I found it easier to 
-work that way. */
+/* ---------- REMOTE RECORDING SECTION */
 .col-70 {
     background-image: url("../images/studio-kit.jpg");
     background-size: cover;
@@ -400,47 +362,39 @@ work that way. */
     height: 500px;
     margin-bottom: 5rem;
     
-    color: rgb(255, 255, 255);
+    color: var(--white-text);
 }
 
-/* this div serves as a container 
-for the paragraph but also to add 
-a transparent overlay to the full length 
-background image */
 .col-70 div {
     width: 100%;
     height: 100%;
     padding-inline: 4.5rem;   
 }
 
-/* this was used as an alternative 
-font color for the headings */
 .heading-color {
     color: rgb(239, 239, 239);
 }
 
-/* transparent overlay was added as 
-a background color for the paragraph */
 #remote-recording {
-    background-color: rgba(0, 0, 0, 0.588);
+    background-color: rgba(0, 0, 0, 0.659);
     border-radius: 8px;
     width: 100%;  
     height: 100%;  
-    padding-block: 7rem;
+    padding-block: 2rem;
 }
 
 #remote-recording p {
-    color: rgb(255, 255, 255);
+    color: var(--white-text);
     margin: 2rem;
     margin-inline: 4rem;
     letter-spacing: 0.5px;
-    font-weight: 300;
-    font-size: 17px;
+    font-weight: 400;
+    font-size: 1.1rem;
     line-height: 2.5rem;
     text-indent: 5px;
-    text-align: center;
 }
 
+/* ---------- The Process Section */
 .col-20 {
     width: 20%;
     height: 400px;
@@ -452,8 +406,8 @@ a background color for the paragraph */
     margin-top: 1rem;
     margin-inline: 1.5rem;
     letter-spacing: 0.5px;
-    font-weight: 300;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 0.9rem;
     line-height: 22px;
     text-indent: 5px;
 }
@@ -462,20 +416,22 @@ a background color for the paragraph */
     margin-bottom: 1rem;
 }
 
+/* ----------- Live & Studio Services Section */
+
 .col-40 {
     width: 40%;
     height: 600px;
     background-color:rgba(24, 24, 24, 0.316);
     padding: 1.3rem;
-    padding-block: 6rem;
+    padding-block: 2rem;
     margin: 2rem;
 }
 
 .col-40 p{
     font-size: 17px;
     margin-inline: 4rem;
-    line-height: 2.5rem;
-    color: rgb(255, 255, 255);
+    line-height: 2rem;
+    color: var(--white-text);
 }
 
 
@@ -512,7 +468,6 @@ fieldset {
 
 label {
     font-size: 16px;
-    font-family: "Syne", sans-serif;
     font-weight: 600;
 }
 
@@ -525,7 +480,6 @@ input {
 
 textarea {
     height: 200px;
-    font-family: "Nunito", sans-serif;
 }
 
 input, textarea {
@@ -536,9 +490,6 @@ input, textarea {
     margin-top: 1rem;
 }
 
-input:hover, textarea:hover {
-    border: solid 2px rgb(0, 0, 0);
-}
 
 
 
@@ -546,19 +497,19 @@ input:hover, textarea:hover {
 /* ---------------------------- EXTRA SMALLSCREENS */
 @media screen and (max-width:600px) {
     h2 {
-        font-size: 20px;
+        font-size: 22px;
         margin-top: 0rem;
         margin-bottom: 4rem;
     }
     
     h3 {
-        font-size: 18px;
+        font-size: 20px;
         margin-top: 0rem;
     }
     
     
     h4 {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 1.3rem;
     }
 
@@ -571,7 +522,7 @@ input:hover, textarea:hover {
         padding: 1rem;
         padding-right: 4rem;
         font-size: 1rem;
-        color: rgb(217, 217, 217);
+        color: var(--grey-white);
         border: none;
     }
 
@@ -607,14 +558,14 @@ input:hover, textarea:hover {
     .drop-down-arrow:before {
         border-right: var(--arrowsize) solid transparent ;
         border-left: var(--arrowsize) solid transparent;
-        border-top: var(--arrowsize) solid rgb(217, 217, 217);
+        border-top: var(--arrowsize) solid var(--grey-white);
         top: 62%;
     }
 
     .drop-down-arrow:after {
         border-right: var(--arrowsize) solid transparent ;
         border-left: var(--arrowsize) solid transparent;
-        border-bottom: var(--arrowsize) solid rgb(217, 217, 217);
+        border-bottom: var(--arrowsize) solid var(--grey-white);
         top: 35%;
     }
 
@@ -629,8 +580,8 @@ input:hover, textarea:hover {
     } 
 
     .col-20 p {
-        font-size: 12px;
-        line-height: 1rem;
+        font-size: 14px;
+        line-height: 1.3rem;
     }
 
     
@@ -641,8 +592,9 @@ input:hover, textarea:hover {
 
     .col-30 p {
         margin: 0;
-        font-size: 12px;
-        text-align: center;
+        margin-bottom: 1.5rem;
+        line-height: 1.5rem;
+        font-size: 16px;
     }
 
     .col-40 {
@@ -653,7 +605,7 @@ input:hover, textarea:hover {
     }
 
     .col-40 p {
-        font-size: 13px;
+        font-size: 16px;
         margin-inline: 0;
     }
 
@@ -664,7 +616,7 @@ input:hover, textarea:hover {
     }
 
     .col-30 h2 {
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 1rem;
     }
 
@@ -676,7 +628,7 @@ input:hover, textarea:hover {
 
     #remote-recording p {
         margin-inline: 0rem;
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .col-33 {
@@ -707,14 +659,14 @@ input:hover, textarea:hover {
     }
 
     .description h2 {
-        font-size: 22px;
+        font-size: 24px;
         margin: 0;
         margin-bottom: 0.5rem;
     }
     
     
     .description h3 {
-        font-size: 13px;
+        font-size: 18px;
         margin-bottom: 2rem;
     }
 
@@ -728,7 +680,7 @@ input:hover, textarea:hover {
 
     .audio {
         width: 100%;
-        margin-top: 1rem;
+        /* margin-top: rem; */
     }
 
 
@@ -736,6 +688,7 @@ input:hover, textarea:hover {
         width: 60%;
         position: absolute;
         left: 0;
+        margin-top: 1.3rem;
         margin-left: 3rem;
     }
 
@@ -763,11 +716,15 @@ input:hover, textarea:hover {
     }
 
     .blue-border-long {
-        max-width: 75%;
+        max-width: 80%;
+    }
+
+    .yellow-border {
+        max-width: 60%;
     }
 
     .yellow-border-long {
-        max-width: 70%;
+        max-width: 80%;
     }
 
 
@@ -821,19 +778,19 @@ input:hover, textarea:hover {
 /* --------------------------------- SMALL SCREENS */
 @media screen and (min-width: 601px) and (max-width: 767px) {
     h2 {
-        font-size: 22px;
+        font-size: 26px;
         margin-top: 0rem;
         margin-bottom: 4rem;
     }
     
     h3 {
-        font-size: 19px;
+        font-size: 22px;
         margin-top: 0rem;
     }
     
     
     h4 {
-        font-size: 16px;
+        font-size: 20px;
         margin-bottom: 1.3rem;
     }
 
@@ -901,37 +858,40 @@ input:hover, textarea:hover {
 
 
    .col-20 {
-        width: 60%;
+        width: 70%;
         height: auto;
         margin-bottom: 1.3rem;
     } 
 
     .col-20 p {
-        font-size: 12px;
-        line-height: 1rem;
+        font-size: 16px;
+        line-height: 1.5rem;
     }
 
     
     .col-30 {
-        width: 70%;
+        width: 80%;
         padding: 1rem;
     }
 
     .col-30 p {
         margin: 0;
-        font-size: 12px;
+        font-size: 18px;
         text-align: center;
+        margin-bottom: 1rem;
+        line-height: 1.8rem;
     }
 
+
     .col-40 {
-        width: 60%;
+        width: 80%;
         height: auto;
         padding-inline: 2.5rem;
         margin: 1rem;
     }
 
     .col-40 p {
-        font-size: 13px;
+        font-size: 18px;
         margin-inline: 0;
     }
 
@@ -943,7 +903,7 @@ input:hover, textarea:hover {
 
     .col-30 h2 {
         margin: auto;
-        font-size: 22px;
+        font-size: 26px;
         margin-bottom: 1rem;
     }
 
@@ -955,7 +915,7 @@ input:hover, textarea:hover {
 
     #remote-recording p {
         margin-inline: 0rem;
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .col-33 {
@@ -965,6 +925,7 @@ input:hover, textarea:hover {
 
     .logo h1 {
         font-size: 26px;
+        /* display: none; */
     }
 
     .hero-image {
@@ -982,22 +943,22 @@ input:hover, textarea:hover {
     }
 
     .description h2 {
-        font-size: 22px;
+        font-size: 26px;
         margin: 0;
         margin-bottom: 0.5rem;
     }
     
     
     .description h3 {
-        font-size: 13px;
-        margin-bottom: 8.5rem;
+        font-size: 20px;
+        margin-bottom: 5.5rem;
     }
 
     .audio {
-        width: 70%;
+        width: 90%;
         left: 0;
         bottom: 0;
-        padding-bottom: 3rem;
+        padding-bottom: 1rem;
     }
 
 
@@ -1009,29 +970,29 @@ input:hover, textarea:hover {
     }
 
     .button {
-        padding: 15px;
-        font-size: 14px;
+        padding: 18px;
+        font-size: 18px;
         margin-block: 2rem;
     }
 
     .blue-border-alt {
-        max-width: 20%;
+        max-width: 30%;
     }
 
     .blue-border-short {
-        max-width: 15%;
-    }
-
-    .blue-border {
-        max-width: 18%;
-    }
-
-    .blue-border-mid {
         max-width: 25%;
     }
 
-    .blue-border-long {
+    .blue-border {
+        max-width: 30%;
+    }
+
+    .blue-border-mid {
         max-width: 40%;
+    }
+
+    .blue-border-long {
+        max-width: 60%;
     }
 
     .yellow-border-long {
@@ -1060,7 +1021,7 @@ input:hover, textarea:hover {
 
 
     .social-links a i , .col-20 h4 i{
-        font-size: 18px;
+        font-size: 22px;
     }
 
     fieldset {
@@ -1087,19 +1048,19 @@ input:hover, textarea:hover {
 @media screen and (min-width: 768px) and (max-width: 990px){
 
     h2 {
-        font-size: 24px;
+        font-size: 28px;
         margin-top: 0rem;
         margin-bottom: 4rem;
     }
     
     h3 {
-        font-size: 21px;
+        font-size: 26px;
         margin-top: 0rem;
     }
     
     
     h4 {
-        font-size: 18px;
+        font-size: 24px;
         margin-bottom: 1.3rem;
     }
 
@@ -1172,20 +1133,21 @@ input:hover, textarea:hover {
     } 
 
     .col-20 p {
-        font-size: 12px;
-        line-height: 1rem;
+        font-size: 16px;
+        line-height: 1.6rem;
     }
 
     
     .col-30 {
-        width: 70%;
+        width: 80%;
         padding: 1rem;
     }
 
 
     .col-30 p {
         margin: 0;
-        font-size: 12px;
+        font-size: 18px;
+        margin-bottom: 1rem;
         text-align: center;
     }
 
@@ -1197,8 +1159,9 @@ input:hover, textarea:hover {
     }
 
     .col-40 p {
-        font-size: 13px;
+        font-size: 18px;
         margin-inline: 0;
+        line-height: 2.2rem;
     }
 
     .col-70 {
@@ -1209,7 +1172,7 @@ input:hover, textarea:hover {
 
     .col-30 h2 {
         margin: auto;
-        font-size: 22px;
+        font-size: 28px;
         margin-bottom: 1rem;
     }
 
@@ -1221,7 +1184,7 @@ input:hover, textarea:hover {
 
     #remote-recording p {
         margin-inline: 0rem;
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .col-33 {
@@ -1240,14 +1203,15 @@ input:hover, textarea:hover {
     }
 
     .description h2 {
-        font-size: 22px;
+        font-size: 28px;
         margin: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
     
     
     .description h3 {
-        font-size: 13px;
+        font-size: 24px;
+        margin-bottom: 1rem;
     }
 
 
@@ -1260,45 +1224,50 @@ input:hover, textarea:hover {
 
     .audio {
         width: 70%;
-        position: absolute;
+        /* position: absolute; */
         left: 0;
     }
 
 
     audio {
-        width: 60%;
+        width: 70%;
         position: absolute;
+        margin-top: 2.5rem;
         margin-left: 2rem;
     }
 
     .button {
-        padding: 15px;
-        font-size: 14px;
+        padding: 18px;
+        font-size: 20px;
         margin-block: 2rem;
     }
 
     .blue-border-alt {
-        max-width: 20%;
-    }
-
-    .blue-border-short {
-        max-width: 15%;
-    }
-
-    .blue-border {
-        max-width: 18%;
-    }
-
-    .blue-border-mid {
         max-width: 25%;
     }
 
+    .blue-border-short {
+        max-width: 20%;
+    }
+
+    .blue-border {
+        max-width: 25%;
+    }
+
+    .blue-border-mid {
+        max-width: 30%;
+    }
+
     .blue-border-long {
-        max-width: 40%;
+        max-width: 60%;
+    }
+
+    .yellow-border {
+        max-width: 60%;
     }
 
     .yellow-border-long {
-        max-width: 70%;
+        max-width: 80%;
     }
 
     .img-row {
@@ -1324,7 +1293,7 @@ input:hover, textarea:hover {
 
     .social-links a i , .col-20 h4 i{
         display: block;
-        font-size: 18px;
+        font-size: 24px;
     }
 
     fieldset {
@@ -1351,19 +1320,19 @@ input:hover, textarea:hover {
 @media screen and (min-width: 991px) and (max-width: 1024px){
 
     h2 {
-        font-size: 26px;
+        font-size: 28px;
         margin-top: 0rem;
         margin-bottom: 4rem;
     }
     
     h3 {
-        font-size: 24px;
+        font-size: 25px;
         margin-top: 0rem;
     }
     
     
     h4 {
-        font-size: 20px;
+        font-size: 23px;
         margin-bottom: 1.3rem;
     }
 
@@ -1380,7 +1349,7 @@ input:hover, textarea:hover {
         padding: 1rem;
         padding-right: 4rem;
         font-size: 1rem;
-        color: rgb(217, 217, 217);
+        color: var(--grey-white);
         border: none;
     }
 
@@ -1430,51 +1399,53 @@ input:hover, textarea:hover {
 
     
    .col-20 {
-        width: 25%;
+        width: 30%;
         height: auto;
         margin-bottom: 1.3rem;
     } 
 
     .col-20 p {
-        font-size: 12px;
-        line-height: 1rem;
+        font-size: 16px;
+        line-height: 1.5rem;
     }
 
     
     .col-30 {
-        width: 45%;
+        width: 60%;
         padding: 1rem;
     }
 
 
     .col-30 p {
         margin: 0;
-        font-size: 12px;
+        font-size: 18px;
+        margin-bottom: 1rem;
+        line-height: 1.8rem;
         text-align: center;
     }
 
     .col-40 {
-        width: 45%;
+        width: 60%;
         height: 550px;
         padding-inline: 2.5rem;
         margin: 1rem;
     }
 
     .col-40 p {
-        font-size: 13px;
+        font-size: 18px;
         margin-inline: 0;
         margin-bottom: 1rem;
     }
 
     .col-70 {
-        width: 80%;
+        width: 90%;
         height: auto;
         justify-content: center;
     }
 
     .col-30 h2 {
         margin: auto;
-        font-size: 22px;
+        font-size: 28px;
         margin-bottom: 1rem;
     }
 
@@ -1486,7 +1457,7 @@ input:hover, textarea:hover {
 
     #remote-recording p {
         margin-inline: 2rem;
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .col-33 {
@@ -1505,14 +1476,14 @@ input:hover, textarea:hover {
     }
 
     .description h2 {
-        font-size: 22px;
+        font-size: 28px;
         margin: 0;
         margin-bottom: 0.5rem;
     }
     
     
     .description h3 {
-        font-size: 13px;
+        font-size: 23px;
     }
 
 
@@ -1529,15 +1500,15 @@ input:hover, textarea:hover {
 
 
     audio {
-        width: 60%;
+        width: 70%;
         position: absolute;
         right: 0;
         margin-right: 1.5rem;
     }
 
     .button {
-        padding: 15px;
-        font-size: 14px;
+        padding: 20px;
+        font-size: 20px;
         margin-block: 2rem;
     }
 
@@ -1547,7 +1518,7 @@ input:hover, textarea:hover {
 
 
     .blue-border-short {
-        max-width: 12%;
+        max-width: 15%;
     }
 
     .blue-border {
@@ -1555,11 +1526,11 @@ input:hover, textarea:hover {
     }
 
     .blue-border-mid {
-        max-width: 20%;
+        max-width: 25%;
     }
 
     .blue-border-long {
-        max-width: 35%;
+        max-width: 40%;
     }
 
     .yellow-border-long {
@@ -1586,7 +1557,7 @@ input:hover, textarea:hover {
     }
 
     .social-links a i , .col-20 h4 i{
-        font-size: 18px;
+        font-size: 22px;
     }
 
     fieldset {
@@ -1612,19 +1583,19 @@ input:hover, textarea:hover {
 /* --------------------------------- EXTRA LARGE SCREENS */
 @media screen and (min-width: 1025px) and (max-width: 1651px) {
     h2 {
-        font-size: 24px;
+        font-size: 28px;
         margin-top: 0rem;
         margin-bottom: 4rem;
     }
     
     h3 {
-        font-size: 22px;
+        font-size: 26px;
         margin-top: 0rem;
     }
     
     
     h4 {
-        font-size: 18px;
+        font-size: 24px;
         margin-bottom: 1.3rem;
     }
 
@@ -1633,51 +1604,54 @@ input:hover, textarea:hover {
     }
     
    .col-20 {
-        width: 25%;
+        width: 30%;
         height: auto;
         margin-bottom: 1.3rem;
     } 
 
     .col-20 p {
-        font-size: 12px;
-        line-height: 1rem;
+        font-size: 17px;
+        line-height: 1.4rem;
     }
 
     
     .col-30 {
-        width: 45%;
+        width: 60%;
         padding: 1rem;
     }
 
 
     .col-30 p {
         margin: 0;
-        font-size: 12px;
+        font-size: 19px;
+        line-height: 2rem;
+        margin-block: 1rem;
         text-align: center;
     }
 
     .col-40 {
-        width: 45%;
-        height: 500px;
+        width: 60%;
+        height: 650px;
         padding-inline: 3rem;
         margin: 1rem;
     }
 
     .col-40 p {
-        font-size: 13px;
+        font-size: 19px;
         margin-inline: 0;
+        line-height: 2.5rem;
         margin-bottom: 1rem;
     }
 
     .col-70 {
-        width: 80%;
+        width: 90%;
         height: auto;
         justify-content: center;
     }
 
     .col-30 h2 {
         margin: auto;
-        font-size: 22px;
+        font-size: 28px;
         margin-bottom: 1rem;
     }
 
@@ -1688,8 +1662,8 @@ input:hover, textarea:hover {
 
 
     #remote-recording p {
-        margin-inline: 2rem;
-        font-size: 14px;
+        margin-inline: 1rem;
+        font-size: 19px;
         text-align: center;
     }
 
@@ -1702,6 +1676,15 @@ input:hover, textarea:hover {
         font-size: 25px;
     }
 
+    .nav-bar {
+        width: 100%;
+    }
+
+    .list-item a {
+        margin-inline: 12px;
+        font-size: 18px;
+    }
+
     .description {
         left: 0;
         bottom: 0;
@@ -1709,7 +1692,7 @@ input:hover, textarea:hover {
     }
 
     .description h2 {
-        font-size: 22px;
+        font-size: 28px;
         margin: 0;
         margin-bottom: 0.5rem;
         margin-left: 2rem;
@@ -1717,7 +1700,7 @@ input:hover, textarea:hover {
     
     
     .description h3 {
-        font-size: 13px;
+        font-size: 26px;
         margin-left: 2rem;
     }
 
@@ -1731,12 +1714,11 @@ input:hover, textarea:hover {
 
     .audio {
         width: 60%;
-        
     }
 
 
     audio {
-        width: 60%;
+        width: 70%;
         position: absolute;
         right: 0;
         margin-right: 2rem;
@@ -1744,39 +1726,34 @@ input:hover, textarea:hover {
     }
 
     .button {
-        padding: 15px;
-        font-size: 14px;
+        padding: 20px;
+        font-size: 20px;
         margin-block: 2rem;
     }
 
     .blue-border-alt {
-        max-width: 20%;
+        max-width: 25%;
     }
 
 
     .blue-border-short {
-        border-bottom: solid 5px rgba(30, 73, 107, 0.631);
-        max-width: 10%;
-        /* margin-left: 35%; */
-        margin: auto;
-        padding: 1rem;
-        margin-bottom: 2rem;
+        max-width: 15%;
     }
 
     .blue-border {
-        max-width: 13%;
+        max-width: 20%;
     }
 
     .blue-border-mid {
-        max-width: 17%;
+        max-width: 25%;
     }
 
     .blue-border-long {
-        max-width: 26%;
+        max-width: 40%;
     }
 
     .yellow-border-long {
-        max-width: 50%;
+        max-width: 60%;
     }
     
     .img-row {
@@ -1799,7 +1776,7 @@ input:hover, textarea:hover {
 
 
     .social-links a i , .col-20 h4 i{
-        font-size: 18px;
+        font-size: 22px;
     }
 
     fieldset {
