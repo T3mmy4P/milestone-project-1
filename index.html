@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEdrumming | Session Drummer</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+</head>
+<body>
+    <header>
+        <!-- Header-->
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo-main.png" alt="T E drumming logo">
+                    <h1>TEdrumming</h1>
+                </a>
+            </div>
+
+            <div>
+                <ul class="nav-bar">
+                    <li class="list-item"><a href="index.html" class="active">Home</a></li>
+                    <li class="list-item"><a href="services.html">Services</a></li>
+                    <li class="list-item"><a href="gallery.html">Gallery</a></li>
+                    <li class="list-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- This section is for respnsive purposes 
+             to change the nav bar into a drop down menu. 
+             I had to use a bit of java script to link 
+             the pages to each drop down option -->
+            <div class="drop-down-select">
+                <select name="nav-links" onchange="window.location.href=this.value;">
+                    <option value="index.html" selected>Home</option>
+                    <option value="services.html">Services</option>
+                    <option value="gallery.html">Gallery</option>
+                    <option value="contact.html">Contact</option>
+                </select>
+                <span class="drop-down-arrow"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Image -->
+        <section class="hero-image-container">
+
+            <!-- The empty div serves as a container 
+             for the hero image section -->
+            <div class="hero-image"></div> 
+
+            <div class="description">
+                <h2>Temmy Edwards</h2>
+                <h3>Musican | Session Drummer</h3>
+            </div>
+
+            <div class="audio">
+                <audio src="assets/audio/YeahYeahYeah.wav" controls></audio>
+            </div>
+        </section>
+
+
+        <!-- About Me -->
+        <section class="row">
+            <div class="col-30">
+                <img src="assets/images/temmy-image-2.jpg" alt="Temmy playing drums">
+            </div>
+
+            <!-- Blue-border-alt is a class for 
+             the blue heading underline with an 
+             alternate size. I found I had to 
+             create multiple classes to size the 
+             underlines correctly. Hoping to find 
+             a better way to add the underline 
+             without the need for multiple classes  -->
+            <article class="col-30">
+                <h2 class="blue-border-alt">ABOUT</h2>
+                <p> 
+                    Temmy is a highly skilled session drummer with extensive experience in 
+                    recording and live performances across a diverse range of musical genres, 
+                    including Funk, Reggae, Pop, Blues, and more. With a rich gospel background, 
+                    Temmy possesses exceptional communication, memorisation, and improvisational skills. 
+                    <br><br>
+
+                    Temmy is committed to delivering the highest level of service to clients. 
+                    With a dedication to preparation, communication, and professionalism, 
+                    this musician consistently exceeds expectations.
+                    <br><br>
+                    
+                    Furthermore, Temmy comes fully equipped with top range gear, 
+                    including IEM, full drum kit, cymbals and drum mics, ensuring 
+                    a seamless and exceptional performance at any event or 
+                    recording session.
+                </p>
+            </article>    
+        </section>
+
+
+        <!-- Videos -->
+
+        <!-- row-background allows the use of an 
+         alternate background for the row. It 
+         didn't make sense to add it to the 
+         row css rule as I wanted to use different 
+         color schemes for different sections -->
+        <section class="row row-background">
+            <h2 class="blue-border-short heading-color top-margin">VIDEOS</h2>
+
+            <!-- no-padding is only used to remove 
+            excess padding that might have 
+            been inherited -->
+            <article class="row no-padding">
+                <div class="col-33">
+                    <video src="assets/videos/TakeMeHigher(PartI).mp4" controls muted></video>
+                </div>
+
+                <div class="col-33">
+                    <video src="assets/videos/FeelThat.mp4" controls muted></video>
+                </div>
+                    
+                <div class="col-33">
+                    <video src="assets/videos/TakeMeHigher(PartIII).mp4" controls muted></video>
+                </div>
+            </article>
+            <button class="button" onclick="location.href='contact.html'">Book Now</button>
+        </section>
+    </main>
+    <footer>
+        <nav class="social-links">
+            <a href="https://www.instagram.com/_tedrumming/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/TEdrumming" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@_tedrumming" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </nav>
+    </footer>
+
+</body>
+</html>

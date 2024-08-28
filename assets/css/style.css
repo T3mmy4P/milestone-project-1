@@ -1,0 +1,1823 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Syne:wght@400..800&family=Belanosima:wght@400;600;700&display=swap');
+
+/* ----------------------- General Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, .button {
+    font-family: "Syne", sans-serif;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+    color: rgb(52, 58, 64);
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    color: rgb(33, 33, 33);
+}
+
+h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    color: rgb(255, 255, 255);
+}
+
+h4 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    color: rgb(33, 33, 33);
+}
+
+ul {
+    list-style-type: circle;
+    text-align: left;
+    margin-inline: 14rem;
+}
+
+
+
+/* Heading underline stylings */
+.yellow-border {
+    border-bottom: solid 2px rgb(255, 183, 3);
+    max-width: 50%;
+    margin: auto;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+.blue-border-alt {
+    border-bottom: solid 5px rgba(30, 73, 107, 0.631);
+    max-width: 20%;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.blue-border-mid {
+    border-bottom: solid 5px rgba(30, 73, 107, 0.631);
+    max-width: 30%;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.blue-border {
+    border-bottom: solid 5px rgba(30, 73, 107, 0.631);
+    max-width: 30%;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.blue-border-short {
+    border-bottom: solid 5px rgba(30, 73, 107, 0.631);
+    max-width: 10%;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.blue-border-long {
+    border-bottom: solid 5px rgba(30, 73, 107, 0.631);
+    max-width: 70%;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+
+/* ----------------------- Header */
+/* container for the logo and nav bar section */
+.header-container {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 5px;
+    position: static;
+    top: 0;
+}
+
+.logo {
+    max-width: 40em;
+    margin-left: 2rem;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo a img, .logo a h2{
+    display: inline;
+}
+
+.logo h1 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 28px;
+    color: rgb(217, 217, 217);
+    margin: auto;
+    margin-left: 0;
+}
+
+.logo a img{
+    max-width: 16%;
+    padding: 5px;
+}
+
+.nav-bar {
+    list-style-type: none;
+    margin: 40px;
+    font-family: "Syne", sans-serif;
+}
+
+.list-item {
+    display: inline;
+}
+
+.list-item a {
+    margin: 20px;
+    letter-spacing: 2px;
+    font-size: 17px;
+    color: rgb(217, 217, 217);
+}
+
+.active {
+    border-bottom: solid 2px rgb(255, 183, 3);
+    padding-bottom: 0.6rem;
+    max-width: 100%; 
+}
+
+/* drop down menu set to no display for larger screen. 
+Will only appear on smaller display screens */
+.drop-down-select {
+    display: none;
+}
+
+
+/* ----------------------- Footer */
+footer {
+    background-color:rgba(30, 73, 107, 0.631);
+    width: 100%;
+    min-height: 90px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.social-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.social-links a {
+    margin: 50px;
+    font-family: "Syne", sans-serif;
+    letter-spacing: 1px;
+}
+
+.social-links i {
+    margin: 10px;
+}
+
+.social-links a, .social-links i {
+    color: rgb(217, 217, 217);
+}
+
+.social-links a i , .col-20 h4 i{
+    display: block;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+/* ----------------------- Pseudo Rules */
+.social-links a:hover, .social-links i:hover {
+    color: rgb(255, 183, 3);
+}
+
+.list-item a:hover {
+    color: rgb(217, 217, 217);
+    padding-bottom: 7px;
+    border-bottom: solid 2px rgb(217, 217, 217);   
+}
+
+.list-item a:focus {
+    border-bottom: solid 2px rgb(255, 183, 3);
+}
+
+.list-item a:focus::after {
+    border-bottom: solid 2px rgb(255, 183, 3);
+}
+
+.button:hover {
+    background-color: rgb(255, 183, 3);
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.button a:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* ------------------------------------------- HOME PAGE */
+/* ----------------------- Hero Image */
+.hero-image-container {
+    height: 90vh;
+    margin: 0;
+}
+
+/* I couldnt get the hero-image to act 
+how I wanted when used directly in html 
+and decided to add it as a background 
+image for the section  */
+.hero-image {
+    background-image: url('../images/hero-image.jpg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.description {
+    color: rgb(239, 239, 239);
+    position: absolute;
+    width: 55%;
+    bottom: 70px;
+    left: 60px;
+}
+
+.description h2 {
+    font-weight: 500;
+    font-size: 28px;
+    color: rgb(221, 221, 221);
+    margin: 0;
+}
+
+.description h3 {
+    font-weight: 400;
+    font-size: 17px;
+    color: rgb(255, 183, 3);
+}
+
+.description h2, .description h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+audio {
+    width: 400px;
+}
+
+.audio {
+    width: 25%;
+    position: absolute;
+    bottom: 7rem;
+    right: 2rem;
+}
+
+
+/* ----------------------- About Me */
+.col-30 {
+    width: 40%;
+    padding: 0.5rem;
+}
+
+.col-30 img {
+    width: 100%;
+    height: 100%;
+}
+
+.col-30 p {
+    margin-inline: 1.5rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 1.5rem;
+    height: auto;
+
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.col-30 h2 {
+    text-align: center;
+}
+
+
+
+/* ----------------------- Videos */
+video {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+/* this was only used to remove 
+excess padding that might have 
+been inherited */
+.no-padding {
+    padding: 0;
+}
+
+
+/* ----------------------- Button */
+
+.button {
+    display: flex;
+    justify-content: center;
+
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: auto;
+    margin-top: 5rem;
+    cursor: pointer;
+    
+    border-width: 0;
+}
+
+.button a {
+    color: rgb(40, 40, 40);
+}
+
+
+/* ------------------------------------------- SERVICES PAGE */
+/* added a row-background class to allow 
+for use of an alternate background and to 
+maintain visual consistency on each page */
+.row-background {
+    background-color: rgb(176, 183, 192);
+}
+
+
+/* also decided to add the image as 
+a background as I found it easier to 
+work that way. */
+.col-70 {
+    background-image: url("../images/studio-kit.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 70%;
+    height: 500px;
+    margin-bottom: 5rem;
+    
+    color: rgb(255, 255, 255);
+}
+
+/* this div serves as a container 
+for the paragraph but also to add 
+a transparent overlay to the full length 
+background image */
+.col-70 div {
+    width: 100%;
+    height: 100%;
+    padding-inline: 4.5rem;   
+}
+
+/* this was used as an alternative 
+font color for the headings */
+.heading-color {
+    color: rgb(239, 239, 239);
+}
+
+/* transparent overlay was added as 
+a background color for the paragraph */
+#remote-recording {
+    background-color: rgba(0, 0, 0, 0.588);
+    border-radius: 8px;
+    width: 100%;  
+    height: 100%;  
+    padding-block: 7rem;
+}
+
+#remote-recording p {
+    color: rgb(255, 255, 255);
+    margin: 2rem;
+    margin-inline: 4rem;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 2.5rem;
+    text-indent: 5px;
+    text-align: center;
+}
+
+.col-20 {
+    width: 20%;
+    height: 400px;
+    padding: 0.5rem;
+    margin-inline: 2.5rem;
+}
+
+.col-20 p{
+    margin-top: 1rem;
+    margin-inline: 1.5rem;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-indent: 5px;
+}
+
+.col-20 h4 i{
+    margin-bottom: 1rem;
+}
+
+.col-40 {
+    width: 40%;
+    height: 600px;
+    background-color:rgba(24, 24, 24, 0.316);
+    padding: 1.3rem;
+    padding-block: 6rem;
+    margin: 2rem;
+}
+
+.col-40 p{
+    font-size: 17px;
+    margin-inline: 4rem;
+    line-height: 2.5rem;
+    color: rgb(255, 255, 255);
+}
+
+
+/* ------------------------------------------- GALLERY PAGE */
+
+.img-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 1rem;
+}
+
+.col-33 {
+    flex: 33%;
+    max-width: 33%;
+    padding: 1rem;
+}
+
+.col-33 img {
+    margin-top: 1rem;
+    width: 100%;
+    vertical-align: middle;
+
+}
+
+
+/* ------------------------------------------- CONTACT PAGE */
+
+fieldset {
+    width: 60%;
+    margin: auto;
+    border: none;
+    margin-top: 0;
+}
+
+label {
+    font-size: 16px;
+    font-family: "Syne", sans-serif;
+    font-weight: 600;
+}
+
+
+input {
+    height: 35px;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+textarea {
+    height: 200px;
+    font-family: "Nunito", sans-serif;
+}
+
+input, textarea {
+    width: 100%;
+    border: solid 2px darkgrey;
+    padding: 2rem;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+input:hover, textarea:hover {
+    border: solid 2px rgb(0, 0, 0);
+}
+
+
+
+/* ---------------------------------------- MEDIA QUERIES */
+/* ---------------------------- EXTRA SMALLSCREENS */
+@media screen and (max-width:600px) {
+    h2 {
+        font-size: 20px;
+        margin-top: 0rem;
+        margin-bottom: 4rem;
+    }
+    
+    h3 {
+        font-size: 18px;
+        margin-top: 0rem;
+    }
+    
+    
+    h4 {
+        font-size: 16px;
+        margin-bottom: 1.3rem;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    select {
+        background: rgba(100, 100, 100, 0.316);
+        padding: 1rem;
+        padding-right: 4rem;
+        font-size: 1rem;
+        color: rgb(217, 217, 217);
+        border: none;
+    }
+
+    .drop-down-select {
+        display: block;
+        margin-right: 2rem;
+        position: relative;
+    }
+
+    .drop-down-arrow {
+        display: block;
+        background: rgb(152, 157, 165);
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        pointer-events: none;
+    }
+
+    .drop-down-arrow::before, 
+    .drop-down-arrow::after {
+        --arrowsize: .6rem;
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 50%;
+    
+        transform: translate(-50%, -50%);
+    }
+
+    .drop-down-arrow:before {
+        border-right: var(--arrowsize) solid transparent ;
+        border-left: var(--arrowsize) solid transparent;
+        border-top: var(--arrowsize) solid rgb(217, 217, 217);
+        top: 62%;
+    }
+
+    .drop-down-arrow:after {
+        border-right: var(--arrowsize) solid transparent ;
+        border-left: var(--arrowsize) solid transparent;
+        border-bottom: var(--arrowsize) solid rgb(217, 217, 217);
+        top: 35%;
+    }
+
+    .row {
+        padding: 0;
+    }
+    
+   .col-20 {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1.3rem;
+    } 
+
+    .col-20 p {
+        font-size: 12px;
+        line-height: 1rem;
+    }
+
+    
+    .col-30 {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .col-30 p {
+        margin: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .col-40 {
+        width: 100%;
+        height: auto;
+        padding-inline: 1.5rem;
+        margin: 1rem;
+    }
+
+    .col-40 p {
+        font-size: 13px;
+        margin-inline: 0;
+    }
+
+    .col-70 {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .col-30 h2 {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    .col-70 div {
+        padding-inline: 1.5rem;
+        text-align: center;
+    }
+
+
+    #remote-recording p {
+        margin-inline: 0rem;
+        font-size: 13px;
+    }
+
+    .col-33 {
+        max-width: 100%;
+        flex: none;
+    }
+
+    .logo {
+        max-width: 40%;
+        margin-left: 2rem;
+        margin-block: 1rem;
+    }
+
+
+    .logo h1 {
+        display: none;
+    }
+    
+    
+    .logo a img{
+        max-width: 70%;
+    }
+
+    .description {
+        max-width: 100%;
+        left: 0;
+        margin-left: 1.5rem;
+    }
+
+    .description h2 {
+        font-size: 22px;
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    
+    .description h3 {
+        font-size: 13px;
+        margin-bottom: 2rem;
+    }
+
+
+    .hero-image {
+        background-size: cover;
+        background-position: center center;
+        height: 95%;
+    }
+
+
+    .audio {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+
+    audio {
+        width: 60%;
+        position: absolute;
+        left: 0;
+        margin-left: 3rem;
+    }
+
+    .button {
+        padding: 15px;
+        font-size: 14px;
+        margin-block: 2rem;
+    }
+
+
+    .blue-border-short {
+        max-width: 30%;
+    }
+
+    .blue-border {
+        max-width: 34%;
+    }
+
+    .blue-border-alt {
+        max-width: 30%;
+    }
+
+    .blue-border-mid {
+        max-width: 50%;
+    }
+
+    .blue-border-long {
+        max-width: 75%;
+    }
+
+    .yellow-border-long {
+        max-width: 70%;
+    }
+
+
+    .img-row {
+        padding: 0;
+    }
+
+
+    .top-margin {
+        margin-top: 2rem;
+    }
+
+
+    footer {
+        height: auto;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+    
+
+    .social-links i {
+        margin: auto;
+    }
+
+
+    .social-links a i , .col-20 h4 i{
+        font-size: 18px;
+    }
+
+    fieldset {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    input {
+        height: 15px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    input, textarea {
+        margin-top: 0.2rem;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+}
+
+/* --------------------------------- SMALL SCREENS */
+@media screen and (min-width: 601px) and (max-width: 767px) {
+    h2 {
+        font-size: 22px;
+        margin-top: 0rem;
+        margin-bottom: 4rem;
+    }
+    
+    h3 {
+        font-size: 19px;
+        margin-top: 0rem;
+    }
+    
+    
+    h4 {
+        font-size: 16px;
+        margin-bottom: 1.3rem;
+    }
+
+    .row {
+        padding: 0;
+    }
+    
+
+    .nav-bar {
+        display: none;
+    }
+
+    select {
+        background: rgba(100, 100, 100, 0.316);
+        padding: 1rem;
+        padding-right: 4rem;
+        font-size: 1rem;
+        color: rgb(217, 217, 217);
+        border: none;
+    }
+
+    .drop-down-select {
+        display: block;
+        margin-right: 2rem;
+        margin-block: 2rem;
+        position: relative;
+    }
+
+    .drop-down-arrow {
+        display: block;
+        background: rgb(152, 157, 165);
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        pointer-events: none;
+    }
+
+    .drop-down-arrow::before, 
+    .drop-down-arrow::after {
+        --arrowsize: .6rem;
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 50%;
+    
+        transform: translate(-50%, -50%);
+    }
+
+    .drop-down-arrow:before {
+        border-right: var(--arrowsize) solid transparent ;
+        border-left: var(--arrowsize) solid transparent;
+        border-top: var(--arrowsize) solid rgb(217, 217, 217);
+        top: 62%;
+    }
+
+    .drop-down-arrow:after {
+        border-right: var(--arrowsize) solid transparent ;
+        border-left: var(--arrowsize) solid transparent;
+        border-bottom: var(--arrowsize) solid rgb(217, 217, 217);
+        top: 35%;
+    }
+
+
+   .col-20 {
+        width: 60%;
+        height: auto;
+        margin-bottom: 1.3rem;
+    } 
+
+    .col-20 p {
+        font-size: 12px;
+        line-height: 1rem;
+    }
+
+    
+    .col-30 {
+        width: 70%;
+        padding: 1rem;
+    }
+
+    .col-30 p {
+        margin: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .col-40 {
+        width: 60%;
+        height: auto;
+        padding-inline: 2.5rem;
+        margin: 1rem;
+    }
+
+    .col-40 p {
+        font-size: 13px;
+        margin-inline: 0;
+    }
+
+    .col-70 {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .col-30 h2 {
+        margin: auto;
+        font-size: 22px;
+        margin-bottom: 1rem;
+    }
+
+    .col-70 div {
+        padding-inline: 2.5rem;
+        text-align: center;
+    }
+
+
+    #remote-recording p {
+        margin-inline: 0rem;
+        font-size: 13px;
+    }
+
+    .col-33 {
+        max-width: 33.3%;
+        flex: none;
+    }
+
+    .logo h1 {
+        font-size: 26px;
+    }
+
+    .hero-image {
+        background-size: cover;
+        background-position: center center;
+        height: 100%;
+    }
+
+
+    .description {
+        left: 0;
+        position: absolute;
+        bottom: 0;
+        margin-left: 1.5rem;
+    }
+
+    .description h2 {
+        font-size: 22px;
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    
+    .description h3 {
+        font-size: 13px;
+        margin-bottom: 8.5rem;
+    }
+
+    .audio {
+        width: 70%;
+        left: 0;
+        bottom: 0;
+        padding-bottom: 3rem;
+    }
+
+
+    audio {
+        width: 60%;
+        top: 0;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .button {
+        padding: 15px;
+        font-size: 14px;
+        margin-block: 2rem;
+    }
+
+    .blue-border-alt {
+        max-width: 20%;
+    }
+
+    .blue-border-short {
+        max-width: 15%;
+    }
+
+    .blue-border {
+        max-width: 18%;
+    }
+
+    .blue-border-mid {
+        max-width: 25%;
+    }
+
+    .blue-border-long {
+        max-width: 40%;
+    }
+
+    .yellow-border-long {
+        max-width: 70%;
+    }
+    
+    .img-row {
+        padding: 0;
+    }
+
+    .top-margin {
+        margin-top: 2rem;
+    }
+
+
+    footer {
+        height: auto;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+    
+
+    .social-links i {
+        margin: auto;
+    }
+
+
+    .social-links a i , .col-20 h4 i{
+        font-size: 18px;
+    }
+
+    fieldset {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    input {
+        height: 15px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    input, textarea {
+        margin-top: 0.2rem;
+    }
+
+    label {
+        font-size: 12px;
+    }
+}
+
+/* ---------------------------------- MEDIUM SIZED SCREENS */
+@media screen and (min-width: 768px) and (max-width: 990px){
+
+    h2 {
+        font-size: 24px;
+        margin-top: 0rem;
+        margin-bottom: 4rem;
+    }
+    
+    h3 {
+        font-size: 21px;
+        margin-top: 0rem;
+    }
+    
+    
+    h4 {
+        font-size: 18px;
+        margin-bottom: 1.3rem;
+    }
+
+    .row {
+        padding: 0;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    select {
+        background: rgba(100, 100, 100, 0.316);
+        padding: 1rem;
+        padding-right: 4rem;
+        font-size: 1rem;
+        color: rgb(217, 217, 217);
+        border: none;
+    }
+
+    .drop-down-select {
+        display: block;
+        margin-right: 2rem;
+        margin-block: 2rem;
+        position: relative;
+    }
+
+    .drop-down-arrow {
+        display: block;
+        background: rgb(152, 157, 165);
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        pointer-events: none;
+    }
+
+    .drop-down-arrow::before, 
+    .drop-down-arrow::after {
+        --arrowsize: .6rem;
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 50%;
+    
+        transform: translate(-50%, -50%);
+    }
+
+    .drop-down-arrow:before {
+        border-right: var(--arrowsize) solid transparent ;
+        border-left: var(--arrowsize) solid transparent;
+        border-top: var(--arrowsize) solid rgb(217, 217, 217);
+        top: 62%;
+    }
+
+    .drop-down-arrow:after {
+        border-right: var(--arrowsize) solid transparent ;
+        border-left: var(--arrowsize) solid transparent;
+        border-bottom: var(--arrowsize) solid rgb(217, 217, 217);
+        top: 35%;
+    }
+
+    
+   .col-20 {
+        width: 60%;
+        height: auto;
+        margin-bottom: 1.3rem;
+    } 
+
+    .col-20 p {
+        font-size: 12px;
+        line-height: 1rem;
+    }
+
+    
+    .col-30 {
+        width: 70%;
+        padding: 1rem;
+    }
+
+
+    .col-30 p {
+        margin: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .col-40 {
+        width: 60%;
+        height: auto;
+        padding-inline: 2.5rem;
+        margin: 1rem;
+    }
+
+    .col-40 p {
+        font-size: 13px;
+        margin-inline: 0;
+    }
+
+    .col-70 {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .col-30 h2 {
+        margin: auto;
+        font-size: 22px;
+        margin-bottom: 1rem;
+    }
+
+    .col-70 div {
+        padding-inline: 2.5rem;
+        text-align: center;
+    }
+
+
+    #remote-recording p {
+        margin-inline: 0rem;
+        font-size: 13px;
+    }
+
+    .col-33 {
+        max-width: 33.3%;
+        flex: none;
+    }
+
+    .logo h1 {
+        font-size: 27px;
+    }
+
+    .description {
+        left: 0;
+        padding-left: 3rem;
+
+    }
+
+    .description h2 {
+        font-size: 22px;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    
+    
+    .description h3 {
+        font-size: 13px;
+    }
+
+
+    .hero-image {
+        background-size: cover;
+        background-position: center center;
+        height: 100%;
+    }
+
+
+    .audio {
+        width: 70%;
+        position: absolute;
+        left: 0;
+    }
+
+
+    audio {
+        width: 60%;
+        position: absolute;
+        margin-left: 2rem;
+    }
+
+    .button {
+        padding: 15px;
+        font-size: 14px;
+        margin-block: 2rem;
+    }
+
+    .blue-border-alt {
+        max-width: 20%;
+    }
+
+    .blue-border-short {
+        max-width: 15%;
+    }
+
+    .blue-border {
+        max-width: 18%;
+    }
+
+    .blue-border-mid {
+        max-width: 25%;
+    }
+
+    .blue-border-long {
+        max-width: 40%;
+    }
+
+    .yellow-border-long {
+        max-width: 70%;
+    }
+
+    .img-row {
+        padding: 0;
+    }
+
+    .top-margin {
+        margin-top: 2rem;
+    }
+
+
+    footer {
+        height: auto;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+    
+
+    .social-links i {
+        margin: auto;
+    }
+
+
+    .social-links a i , .col-20 h4 i{
+        display: block;
+        font-size: 18px;
+    }
+
+    fieldset {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    input {
+        height: 15px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    input, textarea {
+        margin-top: 0.2rem;
+    }
+
+    label {
+        font-size: 12px;
+    }
+}
+
+/* ---------------------------------- LARGE SCREENS */
+@media screen and (min-width: 991px) and (max-width: 1024px){
+
+    h2 {
+        font-size: 26px;
+        margin-top: 0rem;
+        margin-bottom: 4rem;
+    }
+    
+    h3 {
+        font-size: 24px;
+        margin-top: 0rem;
+    }
+    
+    
+    h4 {
+        font-size: 20px;
+        margin-bottom: 1.3rem;
+    }
+
+    .row {
+        padding: 0;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    select {
+        background: rgba(100, 100, 100, 0.316);
+        padding: 1rem;
+        padding-right: 4rem;
+        font-size: 1rem;
+        color: rgb(217, 217, 217);
+        border: none;
+    }
+
+    .drop-down-select {
+        display: block;
+        margin-right: 2rem;
+        margin-block: 2rem;
+        position: relative;
+    }
+
+    .drop-down-arrow {
+        display: block;
+        background: rgb(152, 157, 165);
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        pointer-events: none;
+    }
+
+    .drop-down-arrow::before, 
+    .drop-down-arrow::after {
+        --arrowsize: .6rem;
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 50%;
+    
+        transform: translate(-50%, -50%);
+    }
+
+    .drop-down-arrow:before {
+        border-right: var(--arrowsize) solid transparent ;
+        border-left: var(--arrowsize) solid transparent;
+        border-top: var(--arrowsize) solid rgb(217, 217, 217);
+        top: 62%;
+    }
+
+    .drop-down-arrow:after {
+        border-right: var(--arrowsize) solid transparent ;
+        border-left: var(--arrowsize) solid transparent;
+        border-bottom: var(--arrowsize) solid rgb(217, 217, 217);
+        top: 35%;
+    }
+
+    
+   .col-20 {
+        width: 25%;
+        height: auto;
+        margin-bottom: 1.3rem;
+    } 
+
+    .col-20 p {
+        font-size: 12px;
+        line-height: 1rem;
+    }
+
+    
+    .col-30 {
+        width: 45%;
+        padding: 1rem;
+    }
+
+
+    .col-30 p {
+        margin: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .col-40 {
+        width: 45%;
+        height: 550px;
+        padding-inline: 2.5rem;
+        margin: 1rem;
+    }
+
+    .col-40 p {
+        font-size: 13px;
+        margin-inline: 0;
+        margin-bottom: 1rem;
+    }
+
+    .col-70 {
+        width: 80%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .col-30 h2 {
+        margin: auto;
+        font-size: 22px;
+        margin-bottom: 1rem;
+    }
+
+    .col-70 div {
+        padding-inline: 2.5rem;
+        text-align: center;
+    }
+
+
+    #remote-recording p {
+        margin-inline: 2rem;
+        font-size: 14px;
+    }
+
+    .col-33 {
+        max-width: 33.3%;
+        flex: none;
+    }
+
+    .logo h1 {
+        font-size: 28px;
+    }
+
+    .description {
+        left: 0;
+        bottom: 0;
+        padding-left: 3.5rem;
+    }
+
+    .description h2 {
+        font-size: 22px;
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    
+    .description h3 {
+        font-size: 13px;
+    }
+
+
+    .hero-image {
+        background-size: cover;
+        background-position: center center;
+        height: 100%;
+    }
+
+
+    .audio {
+        width: 60%;
+    }
+
+
+    audio {
+        width: 60%;
+        position: absolute;
+        right: 0;
+        margin-right: 1.5rem;
+    }
+
+    .button {
+        padding: 15px;
+        font-size: 14px;
+        margin-block: 2rem;
+    }
+
+    .blue-border-alt {
+        max-width: 25%;
+    }
+
+
+    .blue-border-short {
+        max-width: 12%;
+    }
+
+    .blue-border {
+        max-width: 18%;
+    }
+
+    .blue-border-mid {
+        max-width: 20%;
+    }
+
+    .blue-border-long {
+        max-width: 35%;
+    }
+
+    .yellow-border-long {
+        max-width: 70%;
+    }
+    
+    .img-row {
+        padding: 0;
+    }
+
+    .top-margin {
+        margin-top: 2rem;
+    }
+
+
+    footer {
+        height: auto;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+    
+    .social-links i {
+        margin: auto;
+    }
+
+    .social-links a i , .col-20 h4 i{
+        font-size: 18px;
+    }
+
+    fieldset {
+        width: 60%;
+        padding: 1rem;
+    }
+
+    input {
+        height: 15px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    input, textarea {
+        margin-top: 0.2rem;
+    }
+
+    label {
+        font-size: 12px;
+    }
+}
+
+/* --------------------------------- EXTRA LARGE SCREENS */
+@media screen and (min-width: 1025px) and (max-width: 1651px) {
+    h2 {
+        font-size: 24px;
+        margin-top: 0rem;
+        margin-bottom: 4rem;
+    }
+    
+    h3 {
+        font-size: 22px;
+        margin-top: 0rem;
+    }
+    
+    
+    h4 {
+        font-size: 18px;
+        margin-bottom: 1.3rem;
+    }
+
+    .row {
+        padding: 0;
+    }
+    
+   .col-20 {
+        width: 25%;
+        height: auto;
+        margin-bottom: 1.3rem;
+    } 
+
+    .col-20 p {
+        font-size: 12px;
+        line-height: 1rem;
+    }
+
+    
+    .col-30 {
+        width: 45%;
+        padding: 1rem;
+    }
+
+
+    .col-30 p {
+        margin: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .col-40 {
+        width: 45%;
+        height: 500px;
+        padding-inline: 3rem;
+        margin: 1rem;
+    }
+
+    .col-40 p {
+        font-size: 13px;
+        margin-inline: 0;
+        margin-bottom: 1rem;
+    }
+
+    .col-70 {
+        width: 80%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .col-30 h2 {
+        margin: auto;
+        font-size: 22px;
+        margin-bottom: 1rem;
+    }
+
+    .col-70 div {
+        padding-inline: 2.5rem;
+        text-align: center;
+    }
+
+
+    #remote-recording p {
+        margin-inline: 2rem;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .col-33 {
+        max-width: 33.3%;
+        flex: none;
+    }
+
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    .description {
+        left: 0;
+        bottom: 0;
+        margin-left: 1.8rem;
+    }
+
+    .description h2 {
+        font-size: 22px;
+        margin: 0;
+        margin-bottom: 0.5rem;
+        margin-left: 2rem;
+    }
+    
+    
+    .description h3 {
+        font-size: 13px;
+        margin-left: 2rem;
+    }
+
+
+    .hero-image {
+        background-size: cover;
+        background-position: center center;
+        height: 100%;
+    }
+
+
+    .audio {
+        width: 60%;
+        
+    }
+
+
+    audio {
+        width: 60%;
+        position: absolute;
+        right: 0;
+        margin-right: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    .button {
+        padding: 15px;
+        font-size: 14px;
+        margin-block: 2rem;
+    }
+
+    .blue-border-alt {
+        max-width: 20%;
+    }
+
+
+    .blue-border-short {
+        border-bottom: solid 5px rgba(30, 73, 107, 0.631);
+        max-width: 10%;
+        /* margin-left: 35%; */
+        margin: auto;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .blue-border {
+        max-width: 13%;
+    }
+
+    .blue-border-mid {
+        max-width: 17%;
+    }
+
+    .blue-border-long {
+        max-width: 26%;
+    }
+
+    .yellow-border-long {
+        max-width: 50%;
+    }
+    
+    .img-row {
+        padding: 0;
+    }
+
+    .top-margin {
+        margin-top: 2rem;
+    }
+
+    footer {
+        height: auto;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+
+    .social-links i {
+        margin: auto;
+    }
+
+
+    .social-links a i , .col-20 h4 i{
+        font-size: 18px;
+    }
+
+    fieldset {
+        width: 60%;
+        padding: 1rem;
+    }
+
+    input {
+        height: 15px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    input, textarea {
+        margin-top: 0.2rem;
+    }
+
+    label {
+        font-size: 12px;
+    }
+}
