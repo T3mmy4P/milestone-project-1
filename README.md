@@ -16,8 +16,9 @@
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Testing](#testing)
   - [Screenshot](#screenshot)
+  - [Deployment](#deployment)
+  - [Testing](#testing)
   - [Bugs](#bugs)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -129,16 +130,6 @@ Using media queries also opened my eyes to various way to play around with respo
 
 - The drop down menu in the responsive design could look a lot more appealing. I intend to use java script to create a better looking drop down menu.
 
-### Testing
-
-- After pushing the project to github, some of the text and boxes were out of line but easily fixed with minimal tweaks in the stylesheet.
-
-- Home page take a little longer to load due to large image files. Remformatted the image files for quicker load time
-
-- The text rendered differently on a chrome desktop signed into a different account
-
-- Some of the css styling renders to apple default styling on apple devices e.g drop down menu has rounded borders, audio player appears more slimline and in dark color.
-
 
 
 ### Screenshot
@@ -166,11 +157,6 @@ Please see below screenshots of errors encountered;
 ![Push Error 5](./assets/images/screenshots/Push%20Attempt%20Error%20Screenshot%205.png)
 
 
-
-
-### Bugs
-- Text renders differently when project is opened in different chrome accounts
-
 ### Deployment
 
 The site was deployed to Git Hub pages using the following steps:
@@ -181,6 +167,26 @@ The site was deployed to Git Hub pages using the following steps:
 - For Branch, select 'main' from the drop-down list and Save.
 - On the top of the page, the link to the complete website is provided.
 - The deployed site will update automatically upon new commits to the master branch.
+
+
+### Testing
+
+- After pushing the project to github and deploying, some of the text and boxes were out of line but easily fixed with minimal tweaks in the stylesheet.
+
+- Home page takes a little longer to load due to large image files. 
+  
+  - Fix
+    - Remformatted the image files from jpg to webp for quicker load time
+    - Compressed images to smaller size
+
+
+- Some of the css styling renders to apple default styling on apple devices e.g drop down menu has rounded borders, audio player appears more slimline and in dark color.
+
+
+### Bugs
+
+- Text renders differently when project is opened in different chrome accounts
+
 
 
 ### Useful resources
