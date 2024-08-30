@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Syne:wght@400..800&family=Belanosima:wght@400;600;700&display=swap');
-
-/* ----------------------- General Rules */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Syne:wght@400..800&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -34,21 +32,48 @@ h3 {
     color: var(--white-text);
 }
 
-h4 {
+.col-20 h3 {
     font-size: 20px;
 }
 
-h2, h4 {
+h2, .col-20 h3 {
     color: rgb(33, 33, 33);
 }
-h2, h3, h4 {
+h2, h3, .col-20 h3 {
     margin-top: 1rem;
     margin-bottom: 3rem;
     font-weight: 500;
 }
 
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
 
-/*---------- Heading Border Stylings */
+.row-background {
+    background-color: rgb(173, 183, 197);
+}
+
+h2, 
+h3, 
+.col-20 h3, 
+.col-30 p, 
+.social-links a i , 
+.col-20 h3 i, 
+.col-30 h2,  
+#remote-recording p {
+    text-align: center;
+}
+
+.heading-color {
+    color: var(--white-text);
+}
+
+/*---------- HEADING BORDER STYLES */
 .yellow-border {
     border-bottom: solid 2px var(--golden-yellow);
     max-width: 50%;
@@ -88,35 +113,16 @@ h2, h3, h4 {
     margin-bottom: 1.7rem;
 }
 
-.row {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem;
-}
-
-h2, h3, h4, 
-.col-30 p, 
-.social-links a i , 
-.col-20 h4 i, .col-30 h2,  
-#remote-recording p {
-    text-align: center;
-}
-
 
 /* ----------------------- HEADER SECTION */
-/* container for the logo and nav bar section */
+/* -------------LOGO & NAV BAR*/
 .header-container {
     background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 0;
     padding: 5px;
     position: static;
-    top: 0;
 }
 
 .logo {
@@ -143,13 +149,14 @@ h2, h3, h4,
 }
 
 .logo a img{
-    max-width: 14%;
+    max-width: 100%;
     padding: 5px;
 }
 
 .nav-bar {
     list-style-type: none;
     margin: 40px;
+    
 }
 
 
@@ -173,12 +180,9 @@ h2, h3, h4,
 
 /* ----------------------- FOOTER SECTION */
 footer {
-    background-color:rgba(30, 73, 107, 0.631);
-    width: 100%;
+    background-color:rgba(30, 74, 107, 0.793);
     min-height: 90px;
-
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
 }
@@ -190,23 +194,25 @@ footer {
     justify-content: space-around;
 }
 
-
-.social-links i {
-    margin: 10px;
-}
-
-.social-links i {
+.social-links a {
     color: var(--grey-white);
 }
 
-.social-links a i , .col-20 h4 i{
+
+.social-links i {
+    margin: 10px;
+    color: var(--grey-white);
+}
+
+
+.social-links a i , .col-20 h3 i{
     display: block;
     font-size: 24px;
 }
 
 
 /* ----------------------- PSEUDO RULES*/
-.social-links i:hover {
+.social-links i:hover, .social-links a:hover {
     color: var(--golden-yellow);
 }
 
@@ -226,10 +232,6 @@ footer {
     color: var(--white-text);
 }
 
-.button a:hover {
-    color: var(--white-text);
-}
-
 input:hover, textarea:hover {
     border: solid 2px rgb(0, 0, 0);
 }
@@ -237,14 +239,14 @@ input:hover, textarea:hover {
 
 
 /* ------------------------------------------- HOME PAGE */
-/* ----------------------- Hero Image */
+/* ----------------------- HERO IMAGE/NAME & JOB TITLE */
 .hero-image-container {
     height: 90vh;
     margin: 0;
 }
 
 .hero-image {
-    background-image: url('../images/hero-image-comp.webp');
+    background-image: url('https://i.postimg.cc/5NYQkV1M/hero-image-comp.webp');
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -277,6 +279,7 @@ input:hover, textarea:hover {
     text-align: left;
 }
 
+/* ----------------------- AUDIO PLAYER */
 audio {
     width: 400px;
 }
@@ -302,7 +305,6 @@ audio {
 
 .col-30 p {
     margin-inline: 1.5rem;
-    color: rgb(0, 0, 0);
     margin-bottom: 1.5rem;
     height: auto;
 
@@ -317,7 +319,6 @@ audio {
 /* ----------------------- VIDEOS SECTION */
 video {
     width: 100%;
-    height: auto;
     margin-bottom: 0;
 }
 
@@ -330,39 +331,26 @@ video {
 
 .button {
     display: flex;
-    justify-content: center;
-
     padding: 20px;
     font-size: 17px;
     font-weight: 400;
     margin: auto;
     margin-top: 5rem;
     cursor: pointer;
-    
     border-width: 0;
-}
-
-.button a {
-    color: rgb(40, 40, 40);
 }
 
 
 /* ------------------------------------------- SERVICES PAGE */
-.row-background {
-    background-color: rgb(176, 183, 192);
-}
-
 /* ---------- REMOTE RECORDING SECTION */
 .col-70 {
-    background-image: url("../images/studio-kit-comp.jpg");
+    background-image: url("https://i.postimg.cc/JhmynHX1/studio-kit-comp.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     width: 70%;
     height: 500px;
     margin-bottom: 5rem;
-    
-    color: var(--white-text);
 }
 
 .col-70 div {
@@ -371,13 +359,9 @@ video {
     padding-inline: 4.5rem;   
 }
 
-.heading-color {
-    color: rgb(239, 239, 239);
-}
-
+/* ---------- TRANSPARENT OVERLAY */
 #remote-recording {
     background-color: rgba(0, 0, 0, 0.659);
-    border-radius: 8px;
     width: 100%;  
     height: 100%;  
     padding-block: 2rem;
@@ -385,16 +369,14 @@ video {
 
 #remote-recording p {
     color: var(--white-text);
-    margin: 2rem;
-    margin-inline: 4rem;
+    margin-inline: 2rem;
     letter-spacing: 0.5px;
     font-weight: 400;
     font-size: 1.1rem;
     line-height: 2.5rem;
-    text-indent: 5px;
 }
 
-/* ---------- The Process Section */
+/* ---------- THE PROCESS SECTION */
 .col-20 {
     width: 20%;
     height: 400px;
@@ -409,22 +391,20 @@ video {
     font-weight: 400;
     font-size: 0.9rem;
     line-height: 22px;
-    text-indent: 5px;
 }
 
-.col-20 h4 i{
+.col-20 h3 i{
     margin-bottom: 1rem;
 }
 
-/* ----------- Live & Studio Services Section */
+/* ----------- LIVE & STUDIO SERVICES SECTION */
 
 .col-40 {
     width: 40%;
     height: 600px;
     background-color:rgba(24, 24, 24, 0.316);
     padding: 1.3rem;
-    padding-block: 2rem;
-    margin: 2rem;
+    margin-inline: 2rem;
 }
 
 .col-40 p{
@@ -451,9 +431,7 @@ video {
 
 .col-33 img {
     margin-top: 1rem;
-    width: 100%;
     vertical-align: middle;
-
 }
 
 
@@ -513,7 +491,7 @@ input, textarea {
         margin-bottom: 1.3rem;
     }
 
-    .nav-bar {
+    .nav-bar{
         display: none;
     }
 
@@ -525,6 +503,7 @@ input, textarea {
         color: var(--grey-white);
         border: none;
     }
+
 
     .drop-down-select {
         display: block;
@@ -647,10 +626,6 @@ input, textarea {
         display: none;
     }
     
-    
-    .logo a img{
-        max-width: 70%;
-    }
 
     .description {
         max-width: 100%;
@@ -925,8 +900,8 @@ input, textarea {
 
     .logo h1 {
         font-size: 26px;
-        /* display: none; */
     }
+
 
     .hero-image {
         background-size: cover;
@@ -1026,7 +1001,6 @@ input, textarea {
 
     fieldset {
         width: 80%;
-        padding: 1rem;
     }
 
     input {
@@ -1196,6 +1170,7 @@ input, textarea {
         font-size: 27px;
     }
 
+
     .description {
         left: 0;
         padding-left: 3rem;
@@ -1224,16 +1199,15 @@ input, textarea {
 
     .audio {
         width: 70%;
-        /* position: absolute; */
         left: 0;
     }
 
 
     audio {
-        width: 70%;
+        width: 80%;
         position: absolute;
         margin-top: 2.5rem;
-        margin-left: 2rem;
+        margin-left: 2.5rem;
     }
 
     .button {
@@ -1469,6 +1443,7 @@ input, textarea {
         font-size: 28px;
     }
 
+
     .description {
         left: 0;
         bottom: 0;
@@ -1676,6 +1651,10 @@ input, textarea {
         font-size: 25px;
     }
 
+    .logo a img{
+        max-width: 100%;
+    }
+
     .nav-bar {
         width: 100%;
     }
@@ -1718,7 +1697,7 @@ input, textarea {
 
 
     audio {
-        width: 70%;
+        width: 60%;
         position: absolute;
         right: 0;
         margin-right: 2rem;
@@ -1795,6 +1774,6 @@ input, textarea {
     }
 
     label {
-        font-size: 12px;
+        font-size: 13px;
     }
 }

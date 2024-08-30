@@ -7,6 +7,8 @@
 - [Overview](#overview)
   - [Links](#links)
   - [Aim](#aim)
+  - [Color Palette](#colorp-palette)
+  - [Typography](#typography)
 - [Features](#features)
   - [Home Page](#home-page)
   - [Services Page](#services-page)
@@ -46,6 +48,20 @@ As a working musician and music director, sometimes trying to find the right mus
 As a personal project I wanted to create a simple site that would stand out to a music professional, agency, or independent artist visually while still offering enough information. 
 
 
+### Color Palette
+![Color Palette](./assets/images/TEdrumming%20Color%20Palette.png)
+
+### Typography
+
+- Syne - Used for headings/sub-heading, nav-bar and labels
+
+![Syne Font](<assets/images/screenshots/syne font screenshot.png>)
+
+- Nunito - Used for main body text and detailed descriptions.
+
+![Nunito Font](<assets/images/screenshots/nunito font screen shot.png>)
+
+
 ## Features
 
 ### Home Page
@@ -54,9 +70,9 @@ The header is a black background to help the gold logo and brand name stand out.
 
 ![Navigation Bar](./assets/images/screenshots/Header%20screenshot.png)
 
-The home page serves as a cool welcome with the users attention being captivated by the hero image. 
+The home page serves as a cool welcome with users attention being captivated by the hero image. 
 
-I used a similar yellowish/gold for the font of the job title to give the page a theme around the gold logo.
+A yellowish/gold for the font of the job title to give the page a theme around the gold logo.
 
 The audio player acts as a little preview for site users to get an idea of the sound and ability of the musician.
 
@@ -108,27 +124,27 @@ The contact page is a simple layout with a white background and grey-ish input b
 
 ### Built with
 
-- Semantic HTML5 markup: Used to create a basic website layout
-- CSS custom properties: Used to create captivating front end design for positive user experience
-- Balsamiq: Used to create wireframes
+- Semantic HTML5 markup - Used to create a basic website layout
+
+- CSS custom properties - Used to create captivating front end design for positive user experience
+
+- Balsamiq - Used to create wireframes
 
 
 ### What I learned
 
 
 
-Diving deep into flex-box and learning how the different properties worked especially vertical alignment helped to make the coding process a lot smoother. 
-
-Using media queries also opened my eyes to various way to play around with responsive design. I still have a long way to fo in mastering it but I intend to keep practicing by working on more practice projects.
-
 
 ### Continued development
 
-- I'm hoping to continue working on the design, especially the stylesheet to make it a lot more simplified and easier to read.
+- Simplify css codes for better load time & overall site performance
 
-- I intend to find an easier to add video files by having a screenshot of the video that links to a site hosting the videos when clicked
+- Add a screenshot of the video that links to a hosting site
 
-- The drop down menu in the responsive design could look a lot more appealing. I intend to use java script to create a better looking drop down menu.
+- Improve the look & layout of the drop down menu
+
+- Add nav links in the footer for easy access to other pages
 
 
 
@@ -156,12 +172,13 @@ Please see below screenshots of errors encountered;
 ![Push Error 4](./assets/images/screenshots/Push%20Attempt%20Error%20Screenshot%204.png)
 ![Push Error 5](./assets/images/screenshots/Push%20Attempt%20Error%20Screenshot%205.png)
 
-
+- Push Fix
+  - Unfortunately I had to removed the .git folder containing the larger files and push to github. The removes .git folder containing the orignal commits will be attached as a link to download.
 ### Deployment
 
 The site was deployed to Git Hub pages using the following steps:
 
-- In the Github repository, the Stetting tab.
+- In the Github repository, click the Setting tab.
 - Under General, navigate to Code and Automation and select 'Pages'.
 - In the Build and Deployment section for Source, select 'Deploy from a branch' from the drop-down list.
 - For Branch, select 'main' from the drop-down list and Save.
@@ -177,21 +194,29 @@ The site was deployed to Git Hub pages using the following steps:
   
   - Fix
     - Remformatted the image files from jpg to webp for quicker load time
+
     - Compressed images to smaller size
 
+    - Used a hosting site to increase site performance
 
-- Some of the css styling renders to apple default styling on apple devices e.g drop down menu has rounded borders, audio player appears more slimline and in dark color.
+  
+  - Page Speed Test 
+    ![Page Load Test 1](./assets/images/screenshots/Page%20load%20test%201.png)
+    ![Page Load Test 2](./assets/images/screenshots/Page%20load%20test%202.png)
+    ![Page Load test 3](./assets/images/screenshots/Page%20load%20test%203.png)
 
+- Ligthouse Score
 
 ### Bugs
 
 - Text renders differently when project is opened in different chrome accounts
 
+- Some elements renders to apple's default design on apple mobile & tablet devices. e.g drop down menu had rounded borders, audio player is relatively slimline and appears in black/dark grey.
 
 
 ### Useful resources
 
-- [W3schools](https://www.w3schools.com/css/default.asp) - 
+- [W3schools](https://www.w3schools.com/css/default.asp) - This was helpful in creating a simple gallery layout.
 - [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This is an amazing article which helped me finally understand Flexbox. I'd recommend it to anyone still learning this concept.
 
 

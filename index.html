@@ -9,15 +9,17 @@
 </head>
 <body>
     <header>
-        <!-- Header-->
+        <!-- HEADER SECTION -->
         <div class="header-container">
+            <!-- LOGO & SITE NAME -->
             <div class="logo">
                 <a href="index.html">
-                    <img src="assets/images/logo-main-comp.png" alt="T E drumming logo">
+                    <img src="https://i.postimg.cc/nVwQkLyk/logo-main-comp.png" alt="T E drumming logo" width="100" height="100">
                     <h1>TEdrumming</h1>
                 </a>
             </div>
 
+            <!-- NAV BAR -->
             <div>
                 <ul class="nav-bar">
                     <li class="list-item"><a href="index.html" class="active">Home</a></li>
@@ -29,7 +31,8 @@
 
             <!-- DROP DOWN MENU FOR SMALLER SCREENS -->
             <div class="drop-down-select">
-                <select name="nav-links" onchange="window.location.href=this.value;">
+                <label for="navigation-bar">Nav Bar</label>
+                <select name="nav-links" id="navigation-bar" onchange="window.location.href=this.value;">
                     <option value="index.html" selected>Home</option>
                     <option value="services.html">Services</option>
                     <option value="gallery.html">Gallery</option>
@@ -41,35 +44,31 @@
     </header>
 
     <main>
-        <!-- HERO IMAGE-->
         <section class="hero-image-container">
-
+            <!-- HERO IMAGE-->
             <div class="hero-image"></div> 
 
+            <!-- NAME & JOB TITLE -->
             <div class="description">
                 <h2>Temmy Edwards</h2>
                 <h3>Musican | Session Drummer</h3>
             </div>
 
+            <!-- AUDIO PLAYER -->
             <div class="audio">
                 <audio src="assets/audio/YeahYeahYeah.wav" controls></audio>
             </div>
         </section>
 
 
-        <!-- About Me -->
+        <!-- ABOUT ME SECTION -->
         <section class="row">
+            <!-- ABOUT ME IMAGE -->
             <div class="col-30">
-                <img src="assets/images/temmy-image-2-comp.webp" alt="Temmy playing drums">
+                <img src="https://i.postimg.cc/65k2km54/temmy-image-2-comp.webp" alt="Temmy playing drums" width="100" height="100">
             </div>
 
-            <!-- Blue-border-alt is a class for 
-             the blue heading underline with an 
-             alternate size. I found I had to 
-             create multiple classes to size the 
-             underlines correctly. Hoping to find 
-             a better way to add the underline 
-             without the need for multiple classes  -->
+            <!-- SHORT BIO -->
             <article class="col-30">
                 <h2 class="blue-border-alt">ABOUT</h2>
                 <p> 
@@ -93,19 +92,11 @@
         </section>
 
 
-        <!-- Videos -->
-
-        <!-- row-background allows the use of an 
-         alternate background for the row. It 
-         didn't make sense to add it to the 
-         row css rule as I wanted to use different 
-         color schemes for different sections -->
+        <!-- VIDEOS SECTION-->
         <section class="row row-background">
             <h2 class="blue-border-short heading-color top-margin">VIDEOS</h2>
 
-            <!-- no-padding is only used to remove 
-            excess padding that might have 
-            been inherited -->
+            <!-- VIDEOS -->
             <article class="row no-padding">
                 <div class="col-33">
                     <video src="assets/videos/TakeMeHigher(PartI).mp4" controls muted></video>
@@ -119,14 +110,17 @@
                     <video src="assets/videos/TakeMeHigher(PartIII).mp4" controls muted></video>
                 </div>
             </article>
+            <!-- BUTTON -->
             <button class="button" onclick="location.href='contact.html'">Book Now</button>
         </section>
     </main>
+
+    <!-- FOOTER SECTION -->
     <footer>
         <nav class="social-links">
-            <a href="https://www.instagram.com/_tedrumming/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/TEdrumming" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.youtube.com/@_tedrumming" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/_tedrumming/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            <a href="https://www.facebook.com/TEdrumming" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a>
+            <a href="https://www.youtube.com/@_tedrumming" target="_blank"><i class="fa-brands fa-youtube"></i>Youtube</a>
         </nav>
     </footer>
 
