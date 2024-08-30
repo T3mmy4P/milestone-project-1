@@ -38,7 +38,7 @@ My chosen project idea is to create a website for a professional session musicia
 
 - Live Site URL: [Click Here!](https://t3mmy4p.github.io/milestone-project-1/)
 
-- Link to folder containing original commit history and screenshots of error: [Download Folder](https://drive.google.com/drive/folders/1E94881tr3it1mDjNwDYgmiku4Yn9SJih?usp=drive_link)
+- Link to folder containing original commit history and screenshots of error: [Download Folder](https://drive.google.com/drive/folders/1E94881tr3it1mDjNwDYgmiku4Yn9SJih?usp=sharing)
 
 
 The user targets for this project are; Music Directors, Music Agencies, Recording Studios and Independent Artists 
