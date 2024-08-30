@@ -7,6 +7,7 @@
 - [Overview](#overview)
   - [Links](#links)
   - [Aim](#aim)
+  - [Wireframes](#wireframes)
   - [Color Palette](#colorp-palette)
   - [Typography](#typography)
 - [Features](#features)
@@ -16,15 +17,15 @@
   - [Contact Page](#contact-page)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Screenshot](#screenshot)
   - [Deployment](#deployment)
+  - [Feedback](#feedback)
   - [Testing](#testing)
   - [Bugs](#bugs)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Credits](#credits)
+   - [Resources](#resources)
+  - [Acknowledgement](#acknowledgment)
 
 
 ## Overview
@@ -46,6 +47,13 @@ The user targets for this project are; Music Directors, Music Agencies, Recordin
 As a working musician and music director, sometimes trying to find the right musicians for a project can be daunting without proper vetting i.e holding an audition. However it is very common that the timeframe for a partical project might not allow for such formalities and this is where having an online presence comes in. Although you'd think this would make the process easier, it only makes things more complicated. I came to the conclusion that the reason for this is majority of musician websites are overloaded with too much information.
 
 As a personal project I wanted to create a simple site that would stand out to a music professional, agency, or independent artist visually while still offering enough information. 
+
+### Wireframes
+![Home Page](./assets/images/screenshots/Home%20Page%20wireframe.png)
+![Color Palette](./assets/images/screenshots/Services%20wireframe.png)
+![Color Palette](./assets/images/screenshots/Gallery%20wireframe.png)
+![Color Palette](./assets/images/screenshots/Contact%20wireframe.png)
+
 
 
 ### Color Palette
@@ -131,11 +139,6 @@ The contact page is a simple layout with a white background and grey-ish input b
 - Balsamiq - Used to create wireframes
 
 
-### What I learned
-
-
-
-
 ### Continued development
 
 - Simplify css codes for better load time & overall site performance
@@ -174,6 +177,8 @@ Please see below screenshots of errors encountered;
 
 - Push Fix
   - Unfortunately I had to removed the .git folder containing the larger files and push to github. The removes .git folder containing the orignal commits will be attached as a link to download.
+
+
 ### Deployment
 
 The site was deployed to Git Hub pages using the following steps:
@@ -186,9 +191,19 @@ The site was deployed to Git Hub pages using the following steps:
 - The deployed site will update automatically upon new commits to the master branch.
 
 
+### Mentor Feedback
+
+- Add screenshots to features and evidence to readme
+- Use a hosting site for images
+- Remove/minimise unnecessary CSS rules and tidy up code
+
 ### Testing
 
-- After pushing the project to github and deploying, some of the text and boxes were out of line but easily fixed with minimal tweaks in the stylesheet.
+- Tested site on android and apple mobile devices and confirmed responsiveness
+
+- Drop dwon navigation menu works well on mobile and tablet devices
+
+- 
 
 - Home page takes a little longer to load due to large image files. 
   
@@ -207,25 +222,59 @@ The site was deployed to Git Hub pages using the following steps:
 
 - Ligthouse Score
 
+  - Home Page
+    - Desktop
+  ![Desktop](./assets/images/screenshots/Home%20Page%20(Desktop).png)
+    - Mobile
+  ![Mobile](./assets/images/screenshots/Home%20Page%20(Mobile).png)
+
+  - Services Page
+    - Desktop
+  ![Desktop](./assets/images/screenshots/Services%20Page%20(Desktop).png) 
+    - Mobile
+  ![Mobile](./assets/images/screenshots/Services%20Page%20(Mobile).png)
+
+  - Gallery Page
+    - Desktop
+  ![Desktop](./assets/images/screenshots/Gallery%20Page%20(Desktop).png) 
+    -Mobile
+  ![Mobile](./assets/images/screenshots/Gallery%20Page%20(Mobile).png)
+
+  - Contact Page
+    - Desktop
+  ![Desktop](./assets/images/screenshots/Contact%20Page%20(Desktop).png) 
+    - Mobile
+  ![Mobile](./assets/images/screenshots/Contact%20Page%20(Mobile).png)
+  
+
 ### Bugs
+
+- After pushing the project to github and deploying, some of the text and boxes were out of line but easily fixed with minimal tweaks in the stylesheet.
 
 - Text renders differently when project is opened in different chrome accounts
 
 - Some elements renders to apple's default design on apple mobile & tablet devices. e.g drop down menu had rounded borders, audio player is relatively slimline and appears in black/dark grey.
 
 
-### Useful resources
+
+## Credits
+
+### Resources
 
 - [W3schools](https://www.w3schools.com/css/default.asp) - This was helpful in creating a simple gallery layout.
-- [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This is an amazing article which helped me finally understand Flexbox. I'd recommend it to anyone still learning this concept.
+- [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Helped me to finally understand Flexbox. I'd recommend it to anyone still learning this concept.
+- [Mimo](https://mimo.org/) - Helped with adding 
+- Used this tutorial for the drop down menu creation of the drop down menu [CSS Custom Select menu](https://www.youtube.com/watch?v=bB14uo0Tu5A)
 
 
-## Author
+### Acknowledgment
 
-- Website - [Temmy Edwards](https://www.your-site.com)
+- Code idea for border on active page tab was inspired by my tutor Komal Karir
+
+- Credit to my mentor Femi Medale for his help in figuring a work around pushing my project on to github after various failed attempts
 
 
-## Acknowledgments
+
 
 
 
