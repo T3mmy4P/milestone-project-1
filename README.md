@@ -265,7 +265,6 @@ The site was deployed to Git Hub pages using the following steps:
 
 - [W3schools](https://www.w3schools.com/css/default.asp) - This was helpful in creating a simple gallery layout.
 - [CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Helped me to finally understand Flexbox. I'd recommend it to anyone still learning this concept.
-- [Mimo](https://mimo.org/) - Helped with adding 
 - Used this tutorial for the drop down menu creation of the drop down menu [CSS Custom Select menu](https://www.youtube.com/watch?v=bB14uo0Tu5A)
 
 
